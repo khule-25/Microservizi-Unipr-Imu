@@ -1,0 +1,22 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+	  <IsPackable>false</IsPackable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="14.0.0" />
+    <PackageReference Include="Unipr.Anagrafiche.ClientHttp" Version="5.0.2" />
+    <PackageReference Include="Unipr.Pagamenti.Shared" Version="5.0.2" />
+    <PackageReference Include="Utility.Kafka.2025" Version="2.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Unipr.Imu.Repository\Unipr.Imu.Repository.csproj" />
+    <ProjectReference Include="..\Unipr.Imu.Shared\Unipr.Imu.Shared.csproj" />
+  </ItemGroup>
+
+</Project>

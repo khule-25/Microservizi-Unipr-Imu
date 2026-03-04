@@ -1,0 +1,28 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+	  <AssemblyVersion>5.0.0.0</AssemblyVersion>
+	  <PackageVersion>5.0.0</PackageVersion>
+	  <PackageReadmeFile>README.md</PackageReadmeFile>
+	  <InformationalVersion>$(PackageVersion)</InformationalVersion>
+	  <RepositoryUrl>https://github.com/Toooomm/unipr-imu</RepositoryUrl>
+    <TargetFramework>net9.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+	<ItemGroup>
+		<None Include="README.md" Pack="true" PackagePath="\" />
+	</ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Http.Abstractions" Version="2.3.0" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Abstractions" Version="9.0.11" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="9.0.11" />
+    <PackageReference Include="Microsoft.Extensions.Http" Version="9.0.11" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Unipr.Imu.Shared\Unipr.Imu.Shared.csproj" />
+  </ItemGroup>
+
+</Project>
